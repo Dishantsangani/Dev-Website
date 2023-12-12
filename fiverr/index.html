@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiverr Homepage</title>
+    <link rel="stylesheet" href="web.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <img src="./logo.svg" alt="Fiverr logo" />
+        </a>
+        <ul class="menu-links">
+          <!-- <span id="close-menu-btn" class="materil-symbols-outlined"
+            >close</span
+          > -->
+          <li><a href="#">Fiverr Busniess</a></li>
+          <li><a href="#">Explore</a></li>
+          <li class="language-item">
+            <a href="#">
+              <span class="material-symbols-outlined"></span>
+              English
+            </a>
+          </li>
+          <li><a href="#">Become a Seller</a></li>
+          <li><a href="../small project/sign up.html">Sign In</a></li>
+          <li class="join-btn"><a href="#">Join Us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-rounded">menu</span>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="content">
+        <h1>Find the right freelance service, right away</h1>
+        <form action="#" class="search-form">
+          <input type="text" placeholder="Search for any service..." required />
+          <button type="submit" class="material-symbols-outlined">
+            Search
+          </button>
+        </form>
+        <div class="popular-tags">
+          Popular:
+          <ul class="tags">
+            <li><a href="#">Website Design</a></li>
+            <li><a href="#">Logo Design</a></li>
+            <li><a href="#">WordPress</a></li>
+            <li><a href="#">AI Design</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerbtn = document.querySelector("#hamburger-btn");
+      const closemenubtn = document.querySelector("#close-menu-btn");
+
+      //togle mobile menu on hamburger button click
+      hamburgerbtn.addEventListener("click", () => {
+        header.classList.toggle("show-mobile-menu");
+      });
+      // close mobile menu on close button click
+      closemenubtn.addEventListener("click", () => {
+        hamburgerbtn.click();
+      });
+    </script>
+  </body>
+</html>
